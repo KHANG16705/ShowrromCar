@@ -1,0 +1,549 @@
+*{
+    padding: 0 ;
+    margin : 0 ; 
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+html{
+    font-family: "Open Sans", Helvetica, sans-serif
+}
+.col-half{
+    width: 50%;
+}
+.Wrapper-main .Header{
+    height: 59px;
+    padding : 0px 28px ; 
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    position: fixed; 
+    top:0 ; 
+    left:0 ; 
+    right: 0;
+    z-index: 1000;
+}
+
+.Wrapper-main .logo-header{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px; 
+    font-size: 14px;
+    display: inline-block;
+    color :#111 ; 
+    transform: scale(1.5,0.9);
+    line-height: 59px; 
+    padding : 0px 24px ;
+    -webkit-text-stroke: 0.5px #111; 
+}
+.Header #nav{
+    list-style: none;
+    float:right;
+    line-height:59px; 
+}
+.Header #nav li{
+    color: #1e1b1b ; 
+    float: left;
+    margin-right: 18px;
+    font-size: 16px;
+}
+
+.Header #nav li a{
+    text-decoration: none;
+    color:#999 ;
+}
+
+.option-header.ti-angle-down{
+    font-size: 9px;
+    vertical-align: text-top;
+}
+
+.option-header.ti-menu{
+    font-size: 27px;
+    vertical-align: middle;
+}
+
+.Slider{
+    margin-top:59px ; 
+    padding-top: 30%; 
+    background: url('https://volvocarhanoi.vn/wp-content/uploads/2021/10/c40-recharge-promotional-hero-20x7-1.webp') top center / cover no-repeat ;
+    position: relative;
+}
+
+.Slider .overlay{
+    background: linear-gradient( to bottom ,  rgba(255,255,255,0.001) 25%, #151519 100%);
+    opacity : 1 ; 
+    position: absolute; 
+    top: 0 ; 
+    left: 0 ;
+    width: 100%; 
+    content: ' ';
+    height: 100%; 
+    z-index: 3; 
+}
+
+.Slider .content{
+    position:relative; 
+    color:white ; 
+    z-index: 10;
+    bottom:110px;
+    right:-150px ; 
+}
+
+.Slider .sub-content{
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 26px;
+    font-family: "Open Sans", Helvetica, sans-serif !important ; 
+}
+
+.Slider .heading-Slider-content{
+    font-size: 54px;
+    font-weight: 550 !important ; 
+    line-height: 62px;
+    padding-bottom: 25px;
+    font-family: "Open Sans", Helvetica, sans-serif !important ; 
+}
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container-content .section-title{
+    font-size:38px ; 
+    color: #676767;
+    margin-top: 120px;
+    margin-bottom: 14px;
+    font-weight: 600 !important;
+}
+.container-content .section-subtitle{
+    font:14px ; 
+    color: #676767;
+    margin-bottom: 40px;
+}
+.car-model-info{
+    display:grid; 
+    grid-template-columns: repeat(2,1fr);
+    gap:20px 48px; 
+}
+.car-model-area {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.model-img{
+    width: 100%;
+    height: 600px;
+    filter: brightness(80%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.car1{
+    background: url('https://volvocarhanoi.vn/wp-content/uploads/2021/11/s90-gallery-2-16x9-1.webp') top center / cover no-repeat;
+    z-index: 3;
+
+}
+
+.car2{
+    background: url('https://volvocarhanoi.vn/wp-content/uploads/2021/11/xc60-hero-4x3-1.webp')top center / cover no-repeat;
+    z-index: 3;
+}
+.car3{
+    background: url('https://volvocarhanoi.vn/wp-content/uploads/2021/11/xc40-recharge-desktop-4x3-2.webp')top center /cover no-repeat;
+    z-index: 3;
+}
+
+.car4{
+    background: url('https://volvocarhanoi.vn/wp-content/uploads/2021/11/xc90-hero-4x3-1.webp') top center /cover no-repeat;
+    z-index: 3;
+}
+.model-overlay{
+    background: #1e1b1b; 
+    opacity : 0.1; 
+    position: absolute; 
+    inset:0 ; 
+    z-index: 3;
+}
+.car-model-area .model-content {
+    position: absolute;
+    top : 85px;
+    left: 80px;
+    color: white;
+    max-width: 80%;
+    z-index: 4;
+
+}
+.model-content .model-title{
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.car-model-area .wrap-nav{
+    position: absolute;
+    bottom: 95px;
+    left:80px; 
+    z-index: 4;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: white;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.ti-angle-right{
+    font-size: 10px;
+}
+
+.circle-deg .ti-control-record{
+    font-size: 35px;
+    font-weight: 200;
+    opacity:0.6 ;
+    position: absolute;
+    bottom: 87px;
+    left:221px; 
+    z-index: 4;
+    color: white;
+}
+.Virtual-showroom{
+    position: relative;
+    z-index: 1;
+}
+.virtual-overlay{
+    background: #676767; 
+    opacity : 0.1; 
+    position: absolute; 
+    inset:0 ; 
+    z-index: 2;
+}
+
+.car-model-area:hover .model-img {
+    transform: scale(1.1);
+    filter: brightness(100%); 
+}
+
+.model-nav {
+  position: relative;
+  display: inline-block;
+}
+
+.model-nav::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 5px);
+  width: 0;
+  height: 2px;
+  background: white;
+  transform: translateY(-50%);
+  transition: width 0.2s ease;
+}
+
+.car-model-area:hover .model-nav::after {
+  width: 25px;
+}
+
+.car-model-area:hover .wrap-nav i {
+  transform: translateX(8px);
+  transition: transform 0.4s ease;
+}
+
+.car-model-area:hover .circle-deg {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.car-model-area::before{
+    content: "";
+    background-color: rgb(30, 107, 185);
+    position: absolute;
+    left:0 ; 
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    transition: width 0.4s ease; 
+    z-index: 10;
+}
+.car-model-area:hover::before{
+    width: 100%; 
+}
+.More{
+    margin-bottom: 25px;
+}
+.more-container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.more-content .more-title{
+    font-size:25px ; 
+    color: #676767;
+    margin-top: 5px;
+    margin-bottom: 14px;
+    font-weight: 600 !important;
+}
+
+.more-content .more-subtitle{
+    font:12px ; 
+    color: #676767;
+    margin-bottom: 25px;
+}
+.more-model-area{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.more-img{
+    width: 100%;
+    height: 700px;
+    filter: brightness(70%);
+    background: url('https://volvocarhanoi.vn/wp-content/uploads/2021/11/our-view-of-luxury.jpg') top center /cover no-repeat;
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+.more-model-area .overlay{
+    background: #1e1b1b; 
+    opacity : 0.1; 
+    position: absolute; 
+    inset:0 ; 
+    z-index: 3;
+}
+.more-model-content{
+    color: white;
+    position: absolute;
+    z-index: 4;
+    top: 190px;
+    left:150px;
+    letter-spacing: 1px;
+}
+.More-area-title{
+    font-size: 34px !important; 
+    margin-bottom: 18px;
+}
+.more-area-subtitle{
+    font-size: 14px;
+}
+
+.more-nav{
+    position: absolute;
+    bottom: 210px;
+    left:150px; 
+    z-index: 4;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: white;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.More-circle-deg .ti-control-record{
+    font-size: 35px;
+    font-weight: 200;
+    opacity:0.6 ;
+    position: absolute;
+    bottom: 201px;
+    left:292px; 
+    z-index: 4;
+    color: white
+}
+.more-model-area:hover .more-img{
+    transform: scale(1.1);
+    filter: brightness(90%);
+}
+.more-model-nav {
+  position: relative;
+  display: inline-block;
+}
+.more-model-nav::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 5px);
+  width: 0;
+  height: 2px;
+  background: white;
+  transform: translateY(-50%);
+  transition: width 0.2s ease;
+}
+
+.more-model-area:hover .more-model-nav::after {
+  width: 25px;
+}
+.more-model-area:hover .ti-angle-right{
+    transform: translateX(8px);
+    transition: transform 0.4s ease;
+}
+.more-model-area:hover .ti-control-record{
+    opacity: 0 ; 
+    transition: opacity 0.4 ease;
+}
+.more-model-area::before{
+    content: "";
+    background-color: rgb(30, 107, 185);
+    position: absolute;
+    left:0 ; 
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    transition: width 0.4s ease; 
+    z-index: 10;
+}
+.more-model-area:hover::before{
+    width: 100%; 
+}
+.header-footer{
+    width:100%; 
+    height:111px; 
+    background-color: #292727;
+}
+.footer-footer {
+    width: 100%;
+    height: 58px;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    color: #bfb5b5;
+    font-size: 14px;
+}
+
+.navigation-icon {
+  position: fixed;
+  bottom: 30px;
+  left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index:11;
+}
+
+.navigation-icon div {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: visible;
+  color: white;
+  transition: transform 0.2s ease;
+}
+.icon-phone{ 
+    background-color: #28a745; 
+}
+.icon-fabook{ 
+    background-color: #1877f2; 
+}
+.icon-car{
+    background-color: #555;
+}
+
+.navigation-icon div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: ripple 1s infinite ease-in;
+  opacity: 0.6;
+  z-index: -1;
+}
+.navigation-icon div{
+    animation: pulse 2s infinite ;
+}
+.icon-phone::after { 
+    background-color: #28a745; 
+}
+.icon-fabook::after { 
+    background-color: #1877f2; 
+}
+.icon-car::after { 
+    background-color: #555; 
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 6% {
+    transform: scale(1);
+  }
+  3% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icon {
+  animation: pulse 0.7s infinite ease-in-out;
+}
+
+.navigation-icon div:hover svg,
+.navigation-icon div:hover img,
+.navigation-icon div:hover i {
+  animation: rotateShake 0.3s infinite ease-in-out;
+  transform-origin: center center;
+}
+
+/* --- Keyframes xoay rung --- */
+@keyframes rotateShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+/* --- Hiệu ứng trượt lên chung --- */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+
+.slide-up {
+  opacity: 0;
+  animation: slideUpFade 0.8s ease-out forwards;
+}
+
+.Slider h2.slide-up { animation-delay: 0.05s; }
+.Slider p.slide-up { animation-delay: 0.05s; }
+
+
